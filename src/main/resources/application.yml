@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbexperts?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 5220018jia
+    thymeleaf:
+      cache:false
+      
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+#      dialect:
+#        org:
+#        hibernate:
+#        dialect:
+#        MySQL5Dialect
+#    database-platform:
+#      org:
+#       hibernate:
+#         dialect:
+#            MySQL5Dialect
+  
+logging:
+   com.blog.springboot: WARN
+#    level:
+#      org:
+#        springframework:
+#           security:info
+  
+server:
+    port: 8080
